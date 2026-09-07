@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact FLOW | Future • Logic • Operations • Worldwide</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Contact FLOW for professional website development, app development, and business systems in Botswana.">
+    <meta name="keywords" content="contact FLOW, technology solutions Botswana, website quote, app development">
+    <meta name="author" content="FLOW">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ============================================ -->
+    <!-- HEADER                                       -->
+    <!-- ============================================ -->
+    <header class="header">
+        <nav class="navbar" role="navigation" aria-label="Main Navigation">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html" aria-label="FLOW Home">
+                        <span class="logo-text">FLOW</span>
+                        <span class="logo-tagline">Future • Logic • Operations • Worldwide</span>
+                    </a>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="portfolio.html" class="nav-link">Our Work</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="btn btn-primary nav-cta">
+                            <i class="fas fa-paper-plane"></i> Get a Quote
+                        </a>
+                    </li>
+                </ul>
+                <div class="hamburger" id="hamburger" aria-label="Toggle Menu" role="button" tabindex="0">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ============================================ -->
+        <!-- PAGE HERO                                    -->
+        <!-- ============================================ -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content">
+                    <span class="section-tag">Get in Touch</span>
+                    <h1 class="page-hero-title">Let's <span class="highlight">Connect</span></h1>
+                    <p class="page-hero-subtitle">
+                        Have a project in mind? We'd love to hear from you. Get a free quote today.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- CONTACT SECTION                              -->
+        <!-- ============================================ -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    
+                    <!-- Contact Form -->
+                    <div class="contact-form-wrapper">
+                        <h2 class="contact-form-title">Send Us a <span class="highlight">Message</span></h2>
+                        <p class="contact-form-subtitle">
+                            Fill in the form below and we'll get back to you within 24 hours.
+                        </p>
+                        
+                        <form id="contactForm" class="contact-form" action="#" method="POST">
+                            <div class="form-group">
+                                <label for="name">Full Name <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" placeholder="e.g., John Doe" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" placeholder="e.g., john@example.com" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number <span class="required">*</span></label>
+                                <input type="tel" id="phone" name="phone" placeholder="e.g., +267 71 123 456" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company">Company Name</label>
+                                <input type="text" id="company" name="company" placeholder="e.g., My Business Ltd">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="service">Service Interested In</label>
+                                <select id="service" name="service">
+                                    <option value="">Select a service...</option>
+                                    <option value="website">Website Development</option>
+                                    <option value="application">Application Development</option>
+                                    <option value="system">Business System</option>
+                                    <option value="maintenance">Support & Maintenance</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="budget">Budget Range</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Select budget...</option>
+                                    <option value="under-5000">Under P5,000</option>
+                                    <option value="5000-15000">P5,000 - P15,000</option>
+                                    <option value="15000-30000">P15,000 - P30,000</option>
+                                    <option value="30000-50000">P30,000 - P50,000</option>
+                                    <option value="over-50000">Over P50,000</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Project Details <span class="required">*</span></label>
+                                <textarea id="message" name="message" rows="5" 
+                                    placeholder="Tell us about your project, requirements, and timeline..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-large">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <!-- Contact Info -->
+                    <div class="contact-info-wrapper">
+                        <div class="contact-info-card">
+                            <h3>Contact Information</h3>
+                            
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4>Email</h4>
+                                    <a href="mailto:info@flow.co.bw">info@flow.co.bw</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <a href="tel:+26771123456">+267 71 123 456</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4>Location</h4>
+                                    <span>Gaborone, Botswana</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <i class="fab fa-whatsapp"></i>
+                                </div>
+                                <div>
+                                    <h4>WhatsApp</h4>
+                                    <a href="https://wa.me/26771123456">Chat with us</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4>Business Hours</h4>
+                                    <span>Mon - Fri: 8:00 AM - 5:00 PM</span>
+                                    <span>Sat: 9:00 AM - 1:00 PM</span>
+                                    <span>Sun: Closed</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-social">
+                                <h4>Follow Us</h4>
+                                <div class="social-links">
+                                    <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- MAP SECTION                                 -->
+        <!-- ============================================ -->
+        <section class="map-section">
+            <div class="container">
+                <div class="map-wrapper">
+                    <h3 class="map-title">Find Us in <span class="highlight">Botswana</span></h3>
+                    <div class="map-container">
+                        <!-- Google Maps Embed -->
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115403.89350027993!2d25.900000000000034!3d-24.6666667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebb58b9e2a0105b%3A0xd10d2ca1e6eb35e0!2sGaborone%2C%20Botswana!5e0!3m2!1sen!2s!4v1700000000000" 
+                            width="100%" 
+                            height="400" 
+                            style="border:0; border-radius: 16px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="FLOW Location Map">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- CTA SECTION                                  -->
+        <!-- ============================================ -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready to <span class="highlight">Start</span>?</h2>
+                    <p class="cta-description">
+                        Let's discuss your project and build something great together.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="https://wa.me/26771123456" class="btn btn-primary btn-large">
+                            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                        </a>
+                        <a href="mailto:info@flow.co.bw" class="btn btn-secondary btn-large">
+                            <i class="fas fa-envelope"></i> Email Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================ -->
+    <!-- FOOTER                                       -->
+    <!-- ============================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-text">FLOW</span>
+                        <span class="logo-tagline">Future • Logic • Operations • Worldwide</span>
+                    </div>
+                    <p class="footer-description">
+                        Moving Business Forward. We provide professional websites, 
+                        applications, and business systems to help companies grow.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Our Work</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="services.html">Website Development</a></li>
+                        <li><a href="services.html">App Development</a></li>
+                        <li><a href="services.html">Business Systems</a></li>
+                        <li><a href="services.html">Support & Maintenance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Get in Touch</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:info@flow.co.bw">info@flow.co.bw</a></li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+26771123456">+267 71 123 456</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> <span>Gaborone, Botswana</span></li>
+                        <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/26771123456">Chat on WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FLOW - Future • Logic • Operations • Worldwide. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
