@@ -1753,3 +1753,190 @@ h6 {
         font-size: 1.3rem;
     }
 }
+/* =============================================
+   PORTFOLIO - GITHUB PROJECT THUMBNAILS
+   ============================================= */
+
+.project-thumbnail {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.thumbnail-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.thumbnail-content i {
+    font-size: 3.5rem;
+    color: white;
+    opacity: 0.9;
+}
+
+.thumbnail-content span {
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-top: 8px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-github-link {
+    margin-top: 20px;
+}
+
+.hero-github-link .btn {
+    background-color: #24292E;
+    color: white;
+    border: none;
+}
+
+.hero-github-link .btn:hover {
+    background-color: #0366D6;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-item .portfolio-overlay .project-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.portfolio-item .portfolio-overlay .project-header i {
+    color: var(--secondary);
+    font-size: 1.2rem;
+}
+
+.portfolio-item .portfolio-overlay .project-header h4 {
+    color: white;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.portfolio-item .portfolio-overlay .portfolio-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 8px 0 10px;
+}
+
+.portfolio-item .portfolio-overlay .portfolio-tag {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
+    padding: 3px 12px;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.portfolio-links {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.portfolio-links .portfolio-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+    transition: var(--transition);
+    padding: 4px 0;
+}
+
+.portfolio-links .portfolio-link:hover {
+    color: var(--secondary);
+    transform: translateX(3px);
+}
+
+.github-stats {
+    padding: 60px 0 80px;
+    background-color: var(--light-gray);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.stat-card {
+    background-color: var(--white);
+    padding: 30px 20px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.stat-card i {
+    font-size: 2.5rem;
+    color: var(--secondary);
+    margin-bottom: 10px;
+}
+
+.stat-card h3 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+
+.stat-card p {
+    color: var(--gray);
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 992px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .project-thumbnail {
+        height: 180px;
+    }
+    .thumbnail-content i {
+        font-size: 2.5rem;
+    }
+    .portfolio-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+        max-width: 300px;
+    }
+    .project-thumbnail {
+        height: 150px;
+    }
+    .thumbnail-content i {
+        font-size: 2rem;
+    }
+}
