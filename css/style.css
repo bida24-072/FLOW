@@ -1319,4 +1319,437 @@ h6 {
 .service-detail-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg,
+    background: linear-gradient(135deg, var(--secondary), var(--accent));
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.service-detail-icon i {
+    font-size: 2.5rem;
+    color: var(--white);
+}
+
+.service-detail-tag {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--secondary);
+    margin-bottom: 5px;
+}
+
+.service-detail-title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.service-detail-description {
+    color: var(--gray);
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.service-detail-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 20px;
+    margin-bottom: 20px;
+}
+
+.service-detail-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+    color: var(--dark-gray);
+}
+
+.service-detail-list li i {
+    color: var(--secondary);
+    font-size: 1rem;
+}
+
+.service-detail-pricing {
+    background-color: var(--light-gray);
+    padding: 15px 25px;
+    border-radius: 12px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.price-label {
+    font-size: 0.85rem;
+    color: var(--gray);
+}
+
+.price-amount {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-left: 10px;
+}
+
+/* ----- PORTFOLIO FILTER ----- */
+.portfolio-filter {
+    padding: 30px 0;
+    background-color: var(--white);
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 10px 24px;
+    border: 2px solid var(--light-gray);
+    background: var(--white);
+    border-radius: 50px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--gray);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.filter-btn:hover {
+    border-color: var(--secondary);
+    color: var(--secondary);
+}
+
+.filter-btn.active {
+    background-color: var(--secondary);
+    color: var(--white);
+    border-color: var(--secondary);
+}
+
+.portfolio-grid-full {
+    padding: 30px 0 80px;
+}
+
+.portfolio-item .portfolio-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--white);
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.portfolio-item .portfolio-link:hover {
+    color: var(--secondary);
+}
+
+/* ----- CONTACT PAGE ----- */
+.contact-section {
+    padding: 80px 0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+}
+
+.contact-form-wrapper {
+    background-color: var(--white);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}
+
+.contact-form-title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.contact-form-subtitle {
+    color: var(--gray);
+    margin-bottom: 30px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    font-size: 0.95rem;
+}
+
+.contact-form .required {
+    color: #dc3545;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid var(--light-gray);
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    transition: var(--transition);
+    background-color: var(--white);
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    border-color: var(--secondary);
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(0, 168, 255, 0.1);
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-info-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info-card {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 40px;
+    border-radius: 20px;
+    position: sticky;
+    top: 100px;
+}
+
+.contact-info-card h3 {
+    color: var(--white);
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+}
+
+.contact-info-item {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.contact-info-icon {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.contact-info-icon i {
+    font-size: 1.2rem;
+    color: var(--secondary);
+}
+
+.contact-info-item h4 {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.contact-info-item a,
+.contact-info-item span {
+    color: var(--white);
+    font-size: 0.95rem;
+}
+
+.contact-info-item a:hover {
+    color: var(--secondary);
+}
+
+.contact-info-item span {
+    display: block;
+}
+
+.contact-social {
+    margin-top: 25px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-social h4 {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.social-links a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    background-color: var(--secondary);
+    transform: translateY(-3px);
+}
+
+/* ----- MAP SECTION ----- */
+.map-section {
+    padding: 0 0 80px;
+}
+
+.map-wrapper {
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}
+
+.map-title {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.map-container {
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+/* =============================================
+   RESPONSIVE - ADDITIONS
+   ============================================= */
+
+@media screen and (max-width: 992px) {
+    .founders-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .story-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .why-grid,
+    .why-choose-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-detail-grid,
+    .service-detail-grid.reverse {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .service-detail-icon {
+        margin: 0 auto;
+    }
+
+    .service-detail-list {
+        grid-template-columns: 1fr;
+        text-align: left;
+        max-width: 400px;
+        margin: 0 auto 20px;
+    }
+
+    .service-detail-pricing {
+        display: block;
+        text-align: center;
+    }
+
+    .page-hero-title {
+        font-size: 2.2rem;
+    }
+
+    .founder-image {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .why-grid,
+    .why-choose-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .contact-form-wrapper {
+        padding: 30px 20px;
+    }
+
+    .contact-info-card {
+        padding: 30px 20px;
+        position: static;
+    }
+
+    .page-hero {
+        padding: 120px 0 60px;
+    }
+
+    .page-hero-title {
+        font-size: 1.8rem;
+    }
+
+    .service-detail-title {
+        font-size: 1.5rem;
+    }
+
+    .story-image img {
+        height: 280px;
+    }
+
+    .story-image-badge {
+        flex-direction: column;
+        gap: 5px;
+        padding: 10px 16px;
+        font-size: 0.85rem;
+    }
+
+    .map-wrapper {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .founder-image {
+        height: 200px;
+    }
+
+    .founder-name {
+        font-size: 1.3rem;
+    }
+
+    .service-detail-list li {
+        font-size: 0.85rem;
+    }
+
+    .price-amount {
+        font-size: 1.3rem;
+    }
+}
