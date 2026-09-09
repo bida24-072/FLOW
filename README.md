@@ -47,4 +47,4 @@ Upload all files to your web host. Recommended:
 - Small Mobile: < 480px
 
 ## Contact
-For support: [UPDATE: info@flow.co.bw]
+For support: [UPDATE:f.l.o.w.bw2026@gmail.com]
